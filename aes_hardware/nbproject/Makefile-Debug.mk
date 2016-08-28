@@ -36,6 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/aes_128_key_expansion.o \
+	${OBJECTDIR}/aes_128_test.o \
+	${OBJECTDIR}/aes_encrypt_descrypt.o \
 	${OBJECTDIR}/welcome.o
 
 
@@ -67,6 +69,16 @@ ${OBJECTDIR}/aes_128_key_expansion.o: aes_128_key_expansion.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/aes_128_key_expansion.o aes_128_key_expansion.c
+
+${OBJECTDIR}/aes_128_test.o: aes_128_test.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/aes_128_test.o aes_128_test.c
+
+${OBJECTDIR}/aes_encrypt_descrypt.o: aes_encrypt_descrypt.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/aes_encrypt_descrypt.o aes_encrypt_descrypt.c
 
 ${OBJECTDIR}/welcome.o: welcome.cc 
 	${MKDIR} -p ${OBJECTDIR}
