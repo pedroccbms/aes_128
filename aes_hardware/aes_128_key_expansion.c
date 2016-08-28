@@ -56,5 +56,5 @@ void AES_128_Key_Expansion (const unsigned char *userkey,
     temp1 = AES_128_ASSIST(temp1, temp2);
     Key_Schedule[10] = temp1;
     //teste
-    return 0;
+    
 }

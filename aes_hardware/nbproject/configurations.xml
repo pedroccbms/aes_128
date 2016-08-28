@@ -9,12 +9,12 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>aes_128_test.c</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>aes_128_key_expansion.c</itemPath>
-      <itemPath>aes_128_test.c</itemPath>
       <itemPath>aes_encrypt_descrypt.c</itemPath>
       <itemPath>welcome.cc</itemPath>
     </logicalFolder>
