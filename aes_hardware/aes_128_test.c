@@ -10,7 +10,7 @@
  *
  * Created on 28 de Agosto de 2016, 18:33
  */
-
+//Autor: Anderson Tibana
 #include <stdio.h>
 #include <wmmintrin.h>
 #include <smmintrin.h>
