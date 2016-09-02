@@ -84,9 +84,9 @@ int main ()
     print_m128i_with_string("Final:", temp2);
     printf ("Returned to initial state. \n");
     fim= clock();
-    printf("%lf\n", (double)inicio/CLOCKS_PER_SEC);
-    printf("%lf\n", (double)fim/CLOCKS_PER_SEC);
-    printf("%lf\n",((double)(fim - inicio)/CLOCKS_PER_SEC));
+    printf("%.3lfms\n", (double)inicio/CLOCKS_PER_SEC*1000);
+    printf("%.3lfms\n", (double)fim/CLOCKS_PER_SEC*1000);
+    printf("%.3lfms\n",((double)(fim - inicio)/CLOCKS_PER_SEC)*1000);
 }
 
 
